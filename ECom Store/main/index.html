@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sarah's Boutique — Family-Owned Fashion, Cape Town</title>
+  <meta name="description" content="Sarah's Boutique is a small, family-owned clothing store in Cape Town. Shop dresses, knitwear, denim and accessories in Rand with secure Visa & Mastercard payments.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- ============ Announcement + header (mirrors includes/store_layout.php) ============ -->
+<div class="announce"><div class="container">
+  <span>✿ Free courier delivery over R1,000 · Family-owned since 1998 · Cape Town</span>
+  <span><a href="tel:+27214220198">+27 21 422 0198</a> · <a href="../admin/index.php">Admin</a></span>
+</div></div>
+<header class="site-header">
+  <div class="container bar">
+    <button class="icon-btn menu-toggle" data-toggle-menu aria-label="Menu">☰</button>
+    <a href="index.html" class="logo">
+      <span class="logo-mark">✿</span>
+      <span><span class="logo-name">Sarah's Boutique</span><span class="logo-sub">Est. 1998 · Cape Town</span></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.php">Shop All</a>
+      <a href="products.php?category=Dresses">Dresses</a>
+      <a href="products.php?category=Tops">Tops</a>
+      <a href="products.php?category=Accessories">Accessories</a>
+      <a href="contact.php">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" data-toggle-search aria-label="Search">⌕</button>
+      <a class="icon-btn" href="account.php" aria-label="Account">👤</a>
+      <button class="icon-btn bag-btn" data-open-bag aria-label="Open bag">👜<span class="bag-count hidden" data-bag-count>0</span></button>
+    </div>
+  </div>
+  <div class="search-row hidden" data-search-row>
+    <form action="products.php" method="get">
+      <input class="input pill" name="q" placeholder="Search dresses, knits, denim…" aria-label="Search">
+      <button class="btn btn-rose btn-sm">Search</button>
+    </form>
+  </div>
+  <nav class="mobile-nav" data-mobile-nav>
+    <a href="products.php">Shop All</a><a href="products.php?category=Dresses">Dresses</a>
+    <a href="products.php?category=Tops">Tops</a><a href="products.php?category=Accessories">Accessories</a>
+    <a href="contact.php">Contact</a><a href="account.php">Sign in / Register</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="container">
+      <div>
+        <span class="badge-pill">✦ Family-owned since 1998</span>
+        <h1>Wear the story <em>only you</em> can tell.</h1>
+        <p class="lead">From garden-party dresses to cloud-soft knits — thoughtfully curated fashion from our family's Kloof Street boutique, now delivered anywhere in South Africa.</p>
+        <div class="hero-actions">
+          <a href="products.php?sort=newest" class="btn btn-dark">Shop New Arrivals →</a>
+          <a href="products.php?max=1000" class="btn btn-outline">Shop Under R1,000</a>
+        </div>
+        <div class="hero-trust">
+          <span><b style="color:var(--gold-deep)">★★★★★</b> 4.9 · 2,400+ reviews</span>
+          <span>🚚 Free delivery R1,000+</span>
+          <span>💳 Visa & Mastercard</span>
+        </div>
+      </div>
+      <div class="collage">
+        <img class="big" src="https://images.pexels.com/photos/2859118/pexels-photo-2859118.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800" alt="Rosalind floral midi dress">
+        <div class="stack">
+          <img src="https://images.pexels.com/photos/6181955/pexels-photo-6181955.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800" alt="Gingham sundress">
+          <img src="https://images.pexels.com/photos/14642651/pexels-photo-14642651.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800" alt="Cream knit sweater">
+        </div>
+        <div class="float-card a"><b style="color:var(--rose-deep)">♥ Bestseller</b><br><span class="muted">Rosalind Midi · R1,349</span></div>
+        <div class="float-card b"><b style="color:var(--gold)">Free Delivery</b><br>on orders over R1,000</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee"><div class="marquee-track">
+    <span>✦ New winter knits just landed</span><span>✦ Free delivery over R1,000</span><span>✦ 30-day easy returns</span><span>✦ Secure Stripe checkout</span><span>✦ Visit us on Kloof Street</span>
+    <span>✦ New winter knits just landed</span><span>✦ Free delivery over R1,000</span><span>✦ 30-day easy returns</span><span>✦ Secure Stripe checkout</span><span>✦ Visit us on Kloof Street</span>
+  </div></div>
+
+  <!-- ============ Categories ============ -->
+  <section class="container section">
+    <div class="section-head"><div><span class="eyebrow">Browse the boutique</span><h2>Shop by Category</h2></div><a class="link-rose" href="products.php">View everything →</a></div>
+    <div class="grid cols-5">
+      <a class="cat-tile" href="products.php?category=Dresses"><img src="https://images.pexels.com/photos/35027340/pexels-photo-35027340.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800" alt="Dresses"><span class="txt"><strong>Dresses</strong>Twirl-approved favourites</span></a>
+      <a class="cat-tile" href="products.php?category=Tops"><img src="https://images.pexels.com/photos/14642651/pexels-photo-14642651.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800" alt="Tops"><span class="txt"><strong>Tops</strong>Knits & everyday soft</span></a>
+      <a class="cat-tile" href="products.php?category=Bottoms"><img src="https://images.pexels.com/photos/19238449/pexels-photo-19238449.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800" alt="Bottoms"><span class="txt"><strong>Bottoms</strong>Denim for real life</span></a>
+      <a class="cat-tile" href="products.php?category=Outerwear"><img src="https://images.pexels.com/photos/30526284/pexels-photo-30526284.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800" alt="Outerwear"><span class="txt"><strong>Outerwear</strong>Layers worth keeping</span></a>
+      <a class="cat-tile" href="products.php?category=Accessories"><img src="https://images.pexels.com/photos/29096397/pexels-photo-29096397.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Accessories"><span class="txt"><strong>Accessories</strong>Finishing touches</span></a>
+    </div>
+  </section>
+
+  <!-- ============ Featured (loaded by scripts.js from products.php?action=list) ============ -->
+  <section class="container section">
+    <div class="section-head"><div><span class="eyebrow">Customer favourites</span><h2>Most Loved Right Now</h2></div><a class="link-rose" href="products.php?sort=rating">Shop top rated →</a></div>
+    <div class="grid cols-4" data-products="featured=1&limit=4"><p class="muted">Loading…</p></div>
+  </section>
+
+  <!-- ============ Story ============ -->
+  <section class="container section">
+    <div class="story">
+      <img src="https://images.pexels.com/photos/8386652/pexels-photo-8386652.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800" alt="Inside Sarah's Boutique">
+      <div class="copy">
+        <span class="eyebrow" style="color:var(--gold)">✿ Our story</span>
+        <h2>Three generations. One little store with a big heart.</h2>
+        <p>What started in 1998 as Sarah's weekend stall at the Old Biscuit Mill is now Cape Town's beloved family boutique on Kloof Street — run by Sarah, her daughter Grace, and a team that knows most customers by name. Every online order is hand-packed with a handwritten thank-you note.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
+          <a href="products.php" class="btn" style="background:var(--cream);color:var(--ink)">Shop the Collection</a>
+          <a href="contact.php" class="btn btn-outline" style="color:var(--cream);border-color:rgba(253,248,243,.3)">📍 Visit the Store</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ New arrivals ============ -->
+  <section class="container section">
+    <div class="section-head"><div><span class="eyebrow">Fresh on the racks</span><h2>New Arrivals</h2></div><a class="link-rose" href="products.php?sort=newest">Shop newest →</a></div>
+    <div class="grid cols-4" data-products="sort=newest&limit=4"><p class="muted">Loading…</p></div>
+  </section>
+</main>
+
+<!-- ============ Footer (mirrors includes/store_layout.php) ============ -->
+<footer class="site-footer">
+  <div class="container perks">
+    <div><strong>🚚 Free Delivery</strong><span>Courier orders over R1,000</span></div>
+    <div><strong>↺ Easy Returns</strong><span>30-day hassle-free returns</span></div>
+    <div><strong>🔒 Secure Checkout</strong><span>Payments by Stripe</span></div>
+    <div><strong>💳 Visa & Mastercard</strong><span>3D Secure protected</span></div>
+  </div>
+  <div class="container footer-cols">
+    <div><div class="logo"><span class="logo-mark">✿</span><span class="logo-name">Sarah's Boutique</span></div>
+      <p style="color:rgba(253,248,243,.65)">A small, family-owned clothing store on Kloof Street since 1998.</p></div>
+    <div><h4>Shop</h4><ul><li><a href="products.php">Shop All</a></li><li><a href="products.php?category=Dresses">Dresses</a></li><li><a href="products.php?category=Tops">Tops & Knitwear</a></li><li><a href="products.php?category=Accessories">Accessories</a></li></ul></div>
+    <div><h4>Customer Care</h4><ul><li><a href="account.php">My Account & Orders</a></li><li><a href="checkout.php">Checkout</a></li><li><a href="contact.php">Contact Us</a></li><li><a href="contact.php?type=feedback">Leave Feedback</a></li></ul></div>
+    <div><h4>Visit Us</h4><ul><li>84 Kloof Street, Gardens, Cape Town, 8001</li><li>+27 21 422 0198</li><li>hello@sarahsboutique.co.za</li><li>Mon–Fri 9:00–18:00 · Sat 9:00–15:00</li></ul></div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© Sarah's Boutique (Pty) Ltd · All prices in ZAR incl. 15% VAT</span>
+    <span class="cards"><span class="card-visa">VISA</span><span class="card-mc"><i></i><i></i></span><span class="card-stripe">stripe</span></span>
+  </div>
+</footer>
+
+<!-- Bag drawer -->
+<div class="overlay" data-overlay></div>
+<aside class="drawer" data-drawer aria-label="Shopping bag">
+  <div class="drawer-head" style="display:flex;justify-content:space-between;align-items:center"><h2 style="font-size:20px">Your Bag</h2><button class="icon-btn" data-close-bag aria-label="Close">✕</button></div>
+  <div class="drawer-head" style="background:#fff"><small data-ship-msg></small><div class="progress"><div data-ship-bar style="width:0"></div></div></div>
+  <div class="drawer-body" data-bag-lines></div>
+  <div class="drawer-foot">
+    <div class="summary-row total"><span>Subtotal</span><span data-bag-total>R0.00</span></div>
+    <p class="muted" style="font-size:12px;margin:4px 0 12px">Prices include 15% VAT. Delivery calculated at checkout.</p>
+    <a href="checkout.php" class="btn btn-rose" style="width:100%">🔒 Checkout</a>
+  </div>
+</aside>
+<div class="toast" data-toast></div>
+<script src="scripts.js"></script>
+</body>
+</html>
